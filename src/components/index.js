@@ -122,6 +122,8 @@ export const PageWrapper = styled.div`
   flex-direction: column;
   padding-top: 36px;
   padding-bottom: 80px;
+  background-image: url("https://cutewallpaper.org/21/technology-background-images/Information-technology-background-Network-business-.jpeg");
+
 
   @media screen and (max-width: 600px) {
     & > * {

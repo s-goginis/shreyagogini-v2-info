@@ -4,6 +4,7 @@ import { useDarkModeManager } from '../contexts/LocalStorage'
 import styled from 'styled-components'
 import { Text } from 'rebass'
 
+
 export default function ThemeProvider({ children }) {
   const [darkMode] = useDarkModeManager()
 
@@ -17,7 +18,7 @@ const theme = (darkMode, color) => ({
   panelColor: darkMode ? 'rgba(255, 255, 255, 0)' : 'rgba(255, 255, 255, 0)',
   backgroundColor: darkMode ? '#212429' : '#F7F8FA',
 
-  uniswapPink: darkMode ? '#ff007a' : 'black',
+  uniswapPink: darkMode ? '#050002' : 'black',
 
   concreteGray: darkMode ? '#292C2F' : '#FAFAFA',
   inputBackground: darkMode ? '#1F1F1F' : '#FAFAFA',
@@ -48,17 +49,17 @@ const theme = (darkMode, color) => ({
   divider: darkMode ? 'rgba(43, 43, 43, 0.435)' : 'rgba(43, 43, 43, 0.035)',
 
   //primary colors
-  primary1: darkMode ? '#2172E5' : '#ff007a',
+  primary1: darkMode ? '#2172E5' : '#050002',
   primary2: darkMode ? '#3680E7' : '#FF8CC3',
   primary3: darkMode ? '#4D8FEA' : '#FF99C9',
   primary4: darkMode ? '#376bad70' : '#F6DDE8',
   primary5: darkMode ? '#153d6f70' : '#FDEAF1',
 
   // color text
-  primaryText1: darkMode ? '#6da8ff' : '#ff007a',
+  primaryText1: darkMode ? '#6da8ff' : '#050002',
 
   // secondary colors
-  secondary1: darkMode ? '#2172E5' : '#ff007a',
+  secondary1: darkMode ? '#2172E5' : '#050002',
   secondary2: darkMode ? '#17000b26' : '#F6DDE8',
   secondary3: darkMode ? '#17000b26' : '#FDEAF1',
 
@@ -72,7 +73,7 @@ const theme = (darkMode, color) => ({
   link: '#2172E5',
   blue: '2f80ed',
 
-  background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #ff007a30 0%, #fff 0%)`,
+  background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #05000230 0%, #fff 0%)`,
 })
 
 const TextWrapper = styled(Text)`
@@ -145,7 +146,7 @@ export const ThemedBackground = styled.div`
   height: 200vh;
   mix-blend-mode: color;
   background: ${({ backgroundColor }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${backgroundColor} 0%, rgba(255, 255, 255, 0) 100%)`};
+    `radial-gradient(50% 50% at 50% 50%, ${backgroundColor} 0%, rgba(255, 255, 255, 0) 0%)`};
   position: absolute;
   top: 0px;
   left: 0px;
